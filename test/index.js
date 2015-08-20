@@ -1,5 +1,5 @@
 
-var assert = require('component/assert');
+var assert = require('assert');
 var mock = require('..');
 var util = require('../lib/util');
 
