@@ -38,6 +38,18 @@ describe('util', function () {
       });
     });
 
+    it('should ensure that children is always an array', function () {
+      var props = { children: 'Hello World' };
+      assert.deepEqual(util.normalize({}, { props: props }), {
+        props: {
+          children: [
+            'Hello World'
+          ]
+        },
+        state: {}
+      });
+    });
+
     it('should allow setting custom children', function () {
       var props = { children: [ 'Hello World' ] };
       assert.deepEqual(util.normalize({}, { props: props }), {
