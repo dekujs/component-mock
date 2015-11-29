@@ -5,7 +5,7 @@
 ## Usage
 
 ```js
-var mock = require('component-mock');
+var Mock = require('component-mock');
 
 var Component = {
   defaultProps: {
