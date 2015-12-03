@@ -57,5 +57,15 @@ describe('mock', function () {
 
       mock(Component).render(overrides);
     });
+
+    it('should normalize a function into a component w/ only a render fn', function () {
+      var ret = {};
+
+      function Component() {
+        return ret;
+      }
+
+      assert.strictEqual(mock(Component).render(), ret);
+    });
   });
 });
