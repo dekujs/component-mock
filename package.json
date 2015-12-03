@@ -1,6 +1,6 @@
 {
   "name": "component-mock",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "devDependencies": {
     "@dominicbarnes/eslint-config": "0.0.3",
     "@dominicbarnes/eslint-config-test": "0.0.2",
